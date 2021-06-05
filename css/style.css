@@ -1,0 +1,159 @@
+body{
+    font-family: 'Oswald', sans-serif ;
+}
+/***************HEADER SECTION*****************/
+header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#header-logo{
+    font-size: 32px;
+    color: white;
+}
+header a{
+    color: rgb(250, 246, 246);
+    margin-left: 24px;
+}
+header a:hover{
+    color: rgb(250, 246, 246);
+}
+header a:visited{
+    color: rgb(250, 246, 246);
+}
+
+#menu-btn i{
+    font-size: 32px;;
+}
+.solid-header{
+    position: fixed;
+    background-color: rgb(27, 20, 27);
+}
+#arrow-down{
+    color: white;
+}
+
+/***************HERO SECTION*****************/
+
+#hero-section{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+ 
+#hero-logo{
+    height: 180px;
+}
+#arrow-down{
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 64px;
+
+} 
+#hero-section::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(53, 52, 49, 0.103);
+    height: 100vh;
+}
+
+/*************** INTRO SECTION*****************/
+#intro-section{
+    background: honeydew;
+}
+#intro-logo{
+    height: 150px;
+}
+
+/*************** ABOUT SECTION*****************/
+
+#about-bg-1{
+    background-image: url(../img/great-place.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 420px;
+}
+#about-bg-2{
+    background-image: url(../img/find-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 500px;
+    
+}
+
+
+/*************** MENU SECTION*****************/
+#menu-section{
+    background-color: honeydew;
+}
+/*************** MAP SECTION*****************/
+
+#map{
+    height: 450px;
+}
+
+/*************** CONTACT SECTION*****************/
+#contact-info-bg-1{
+    background: linear-gradient(to right, #36313782, #36313782), url(../img/contact-bg-1.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+#contact-info-bg-2{
+    background: #312423a8;
+}
+/*************** FOOTER SECTION*****************/
+footer{
+    background: #312423;
+}
+footer a i{
+    font-size: 32px;
+    color: white;
+}
+@media(max-width: 768px){
+    footer{
+        text-align: center;
+    }
+    #social-icons{
+        text-align: center !important;
+        margin-top: 8px;
+    }
+}
+
+
+/***************MOBILE-MENu SECTION*****************/
+
+#mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(48, 23, 16, 0.363);
+    z-index: 2;
+    display: none;
+}
+#mobile-menu a{
+    color: white;
+}
+#mobile-menu a:hover{
+    color: rgb(121, 117, 117);
+}
+#mobile-menu #close-btn{
+    position: absolute;
+    right: 28px;
+    top: 13px;
+    font-size: 38px;
+}
